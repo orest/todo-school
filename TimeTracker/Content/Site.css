@@ -1,0 +1,50 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+
+.margin-top-20{margin-top: 20px}
+a.no-decor{text-decoration: none}
+.color-red{color: red}
+.icon-larger{font-size: 16px; }
+
+.width100{width: 100%}
+.display-box{display:flex;width: 100%;justify-content: space-between}
+.display-box-item{flex-grow: 1;margin: 0 10px}
+.display-box-item:first-child{flex:0 0 70%}
+
+.drag-handle {    margin-right: 10px;    font: bold 20px Sans-Serif;color: #5F9EDF;    display: inline-block;cursor: move;cursor: -webkit-grabbing;}
+.sortable-ghost {opacity: .2;background-color: #5F9EDF}
+        
+/* .new-todo{ margin-bottom: 8px;}
+.todo li{ color: white; }
+.todo .p-0  { background: #ff0000; }
+.todo .p-1  { background: #FF4600;}
+.todo .p-2  { background: #FF5000;}
+.todo .p-3  { background: #FF5a00;}
+.todo .p-4  { background: #FF6400;}
+.todo .p-5  { background: #FF6e00;}
+.todo .p-6  { background: #FF7800;}
+.todo .p-7  { background: #FF8200;}
+.todo .p-8  { background: #FF8c00;}
+.todo .p-9  {background: #FF9600}
+.todo .p-10 {background: #FFa000}
+.todo .p-11 {background: #FFaa00}
+.todo .p-12 {background: #FFb400}
+.todo .p-13 {background: #FFbe00}
+.todo .p-14 {background: #FFc800} */
+

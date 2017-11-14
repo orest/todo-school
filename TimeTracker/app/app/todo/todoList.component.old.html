@@ -1,0 +1,49 @@
+﻿
+<todo [mode]="todoStates.Create" (saveNewTodo)="saveTodo($event)"></todo>
+<hr>
+<ul class="list-group">
+    <li *ngFor="let t of todos" class="list-group-item">
+        <todo [todo]="t" [mode]="todoStates.Display"></todo>
+    </li>
+</ul>
+
+
+
+
+<!-- 
+<div class="alert alert-danger" *ngIf="!!errorMessage">
+    {{errorMessage}}
+</div>
+
+<div *ngIf="todo.isCompleted else elseBlock">
+    <s>{{todo.title}}</s>
+</div>
+<ng-template #elseBlock>
+    <div>{{todo.title}}</div>
+</ng-template>
+<button (click)="toggleComplete()" >Toggle Complete</button>
+<br>
+
+<div class="form-group">
+    <input type="text" [(ngModel)]="todoTitle">  |    {{todoTitle}}
+</div> -->
+
+<!-- HTMl -->
+<!-- <div [hidden]="todo.isCompleted">
+    Title: {{todo.title}}
+    <img [src]="todo.imageUrl"  >
+    <img src="{{todo.imageUrl}}" [style.width.px]="imageWidth" >
+    <br> Time Spent: {{todo.minutesSpent}}
+</div> -->
+
+
+
+
+
+
+<!-- <br>
+<p>{{pageTitle}}</p>
+<p>{{2+2}}</p>
+<p>{{getTitle()}}</p>
+<div innerText={{pageTitle}} ></div>
+<div [innerText]="pageTitle" ></div> -->

@@ -1,0 +1,23 @@
+<div class="panel-heading text-right">
+	<button class="btn btn-warning" (click)="showAllToDos()">Show All</button>
+</div>
+
+<div class="alert alert-danger" *ngIf="!!errorMessage">
+    {{errorMessage}}
+</div>
+
+<div class="display-box">
+    <ul class="list-group display-box-item todo">
+        <li class="list-group-item active">Active Todos</li>
+        <li *ngFor="let t of todos" class="list-group-item">
+            <todo [todo]="t" [mode]="todoStates.Display"></todo>
+        </li>
+    </ul>
+
+    <div class="panel panel-primary display-box-item">
+        <div class="panel-heading text-center">Add New </div>
+        <div class="panel-body">
+                <todo [mode]="todoStates.Create" (saveNewTodo)="saveTodo($event)"></todo>
+        </div>
+    </div>
+</div>

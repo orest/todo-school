@@ -1,0 +1,3 @@
+.display-box{display:flex;width: 100%;justify-content: space-between}
+.display-box-item{flex-grow: 1;margin: 0 10px}
+.display-box-item:first-child{flex:0 0 70%}
