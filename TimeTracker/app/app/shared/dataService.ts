@@ -62,7 +62,7 @@ export class DataService {
     }
 
     public startTodo(todo: ToDo): Observable<boolean> {
-        return this._http.put("api/todos/start/?id=" + todo.id, todo).map(p => {
+        return this._http.put("/api/todos/start/?id=" + todo.id, todo).map(p => {
             return true;
         });
     }

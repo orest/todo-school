@@ -183,8 +183,12 @@
   <ItemGroup>
     <Content Include="app\app\app.component.css" />
     <Content Include="app\app\app.component.html" />
+    <TypeScriptCompile Include="app\app\shared\enums.ts" />
+    <Content Include="app\app\todo\todo-edit.component.html" />
     <Content Include="app\app\todo\todo.component.html" />
+    <Content Include="app\app\todo\todoList.component.css" />
     <Content Include="app\app\todo\todoList.component.html" />
+    <Content Include="app\app\todo\todoList.component.old.html" />
     <Content Include="app\favicon.ico" />
     <Content Include="app\index.html" />
     <Content Include="app\styles.css" />
@@ -270,10 +274,11 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app\app\app.component.spec.ts" />
     <TypeScriptCompile Include="app\app\app.component.ts" />
     <TypeScriptCompile Include="app\app\app.module.ts" />
     <TypeScriptCompile Include="app\app\shared\dataService.ts" />
+    <TypeScriptCompile Include="app\app\shared\todo.ts" />
+    <TypeScriptCompile Include="app\app\todo\todo-edit.component.ts" />
     <TypeScriptCompile Include="app\app\todo\todo.component.ts" />
     <TypeScriptCompile Include="app\app\todo\todoList.component.ts" />
     <TypeScriptCompile Include="app\environments\environment.prod.ts" />
@@ -310,7 +315,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>22006</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:22006/</IISUrl>
+          <IISUrl>http://localhost:22009/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
